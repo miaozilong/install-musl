@@ -1,5 +1,5 @@
-name: 安装musl
-run-name: 安装musl
+name: 安装musl-cross-make
+run-name: 安装musl-cross-make
 on: [ push ]
 jobs:
   build:
@@ -11,4 +11,4 @@ jobs:
           cd musl-cross-make
           ls
           make TARGET=x86_64-linux-musl
-          make install
+          sudo make install
