@@ -5,13 +5,7 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
-      - run: pwd
       - run: git clone https://github.com/richfelker/musl-cross-make.git
-      - run: pwd
-      - run: ls
-      - run: sleep 3
-      - run: cd /home/runner/work/install-musl/install-musl/musl-cross-make
-      - run: pwd
-      - run: ls
-      - run: make TARGET=x86_64-linux-musl
-      - run: musl-gcc -v
+      - run: |
+          cd musl-cross-make
+          ./make
