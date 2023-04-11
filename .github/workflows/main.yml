@@ -11,4 +11,4 @@ jobs:
           cd musl-cross-make
           pwd
           ls
-          make
+          make TARGET=x86_64-linux-musl
