@@ -10,7 +10,7 @@ jobs:
       - run: pwd
       - run: ls
       - run: sleep 3
-      - run: cd ./musl-cross-make
+      - run: cd /home/runner/work/install-musl/install-musl/musl-cross-make
       - run: pwd
       - run: ls
       - run: make TARGET=x86_64-linux-musl
