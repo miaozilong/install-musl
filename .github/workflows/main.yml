@@ -12,3 +12,4 @@ jobs:
           pwd
           ls
           make TARGET=x86_64-linux-musl
+          make install
