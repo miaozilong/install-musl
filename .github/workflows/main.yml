@@ -9,6 +9,6 @@ jobs:
         run: |
           git clone https://github.com/richfelker/musl-cross-make.git
           cd musl-cross-make
-          ls
+          cp config.mak.dist config.mak
           make TARGET=x86_64-linux-musl
           sudo make install
